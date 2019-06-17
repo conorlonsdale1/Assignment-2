@@ -75,29 +75,31 @@ namespace Assignment_2
             {
                 R5 = 0;
             }
-            seriesTotal = R1 + R2 + R3 + _R4 + R5;
+            seriesTotal = R1 + R2 + R3 + R4 + R5;
             label6.Text = "seriesTotal =" + seriesTotal;
 
-            if (R1 = 0)
+            if (R1 == 0)
             {
                 R1 = double.PositiveInfinity;
             }
-            if (R2 = 0)
+            if (R2 == 0)
             {
                 R2 = double.PositiveInfinity;
             }
-            if (R3 = 0)
+            if (R3 == 0)
             {
                 R3 = double.PositiveInfinity;
             }
-            if (R4 = 0)
+            if (R4 == 0)
             {
                 R4 = double.PositiveInfinity;
             }
-            if (R5 = 0)
+            if (R5 == 0)
             {
                 R5 = double.PositiveInfinity;
             }
+            parallelTotal = 1 / (1/R1 + 1/R2 + 1/R3 + 1/R3 + 1/R4 + 1/R5);
+            label7.Text = "parallel Total =" + parallelTotal;
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)

@@ -34,6 +34,8 @@ namespace Assignment_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+        
+            // Resistors in a total series and a parallel series. All five resistors added together to find out the value of the total series  
             double R1, R2, R3, R4, R5, seriesTotal, parallelTotal;
             try
             {
@@ -78,6 +80,7 @@ namespace Assignment_2
             seriesTotal = R1 + R2 + R3 + R4 + R5;
             label6.Text = "seriesTotal =" + seriesTotal;
 
+            // All resistor values are set at zero and infinite. Parallel total 
             if (R1 == 0)
             {
                 R1 = double.PositiveInfinity;
